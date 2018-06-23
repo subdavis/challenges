@@ -1,0 +1,14 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "simple challenges",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  }
+}
