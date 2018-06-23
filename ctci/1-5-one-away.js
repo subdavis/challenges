@@ -17,7 +17,7 @@ let oneAway = (a, b) => {
     // push the diff to the stack
     while(i < longer.length){
         if (j >= shorter.length) {
-            s.push(a[i++]);
+            s.push(a[i++]); //finish pushing the rest of the longer string
         } else if (longer[i] != shorter[j]){
             s.push(a[i++]);
         } else {
@@ -27,7 +27,7 @@ let oneAway = (a, b) => {
     }
     // try to resolve the diff from the other side.
     j = b.length - 1;
-    while (s.size() > 1) {
+    while (s.length > 1) {
         if (b[j--] != s.pop()) {
             return false;
         }
